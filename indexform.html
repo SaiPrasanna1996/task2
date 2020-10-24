@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Login Form</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	.navbar-inverse{
+		background: black;
+		font-size: 20px;
+		color: floralwhite;
+		margin: 1%;
+
+	}
+	.active{
+		justify-content: center;
+		text-align: center;
+		margin:10%;
+	}
+	.dropdown{
+		display: inline;
+
+	}
+	.btn{
+		margin: 10px;
+	}
+
+</style>
+
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img src="images/User.png" alt="Userimages" style="width: 30%">
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Aboutus</a></li>
+				<li><a href="#">Login</a></li>
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Register <span class="caret"></span></button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Students Registration</a></li>
+				<li><a href="#">Staff Registration</a></li>
+				<li><a href="#">Non-Technical Registration</a></li>
+			</ul>
+		</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<form class="active">
+
+
+		Username  	:&nbsp;
+		<input type="text" name="username" autocomplete="off" placeholder="enter username" required=" "><br>
+		<br>
+		Password  	:&nbsp;
+		<input type="password" name="password" autocomplete="off" placeholder="enter password" required=" "><br>
+		<br>
+		<button class="btn btn-success">Submit</button>
+		<ul class="form-options">
+		<br>
+		<a href="register">Create new account</a>&nbsp;&nbsp;
+		<a href="forget">Forget Password?</a>
+		</ul>
+	</form>
+			
+			
+
+	</body>
+</html>
+
+
+
